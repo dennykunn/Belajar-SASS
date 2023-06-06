@@ -1,0 +1,43 @@
+// :root {
+//     --primary-color: rgb(0, 255, 157);
+//     --secondary-color: rgb(187, 255, 0);
+//     --text-color: rgb(255, 106, 0);
+// }
+
+// body {
+//     background-color: var(--primary-color);
+// }
+
+// h1{
+//     color: var(--secondary-color);
+// }
+
+// p{
+//     color: var(--text-color);
+// }
+
+// SASS Variable
+// Global Scope
+// $secondary-color: rgb(187, 255, 0);
+// $text-color: rgb(255, 106, 0);
+
+// body {
+//     // Local Scope
+//     $primary-color: rgb(0, 255, 157) !global;
+//     background-color: $primary-color;
+// }
+
+// h1{
+//     color: $primary-color;
+// }
+
+// Map
+$alert: (
+    'danger': red,
+    'success': green,
+    'warning': orange,
+);
+
+h1{
+    color: map-get($alert, 'danger');
+}
